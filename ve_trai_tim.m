@@ -5,8 +5,8 @@ l2 = 50
 
 for t = -pi: 0.02 : pi
     
-    X  = 16*(sin(t))^3; 
-    Y  = 13*cos(t)- 5*cos(2*t)- 2*cos(3*t)- cos(4*t);
+    X  = 10+16*(sin(t))^3; 
+    Y  = 10+13*cos(t)- 5*cos(2*t)- 2*cos(3*t)- cos(4*t);
     c2 = (X^2 + Y^2 -l1^2 -l2^2)/ (2*l1*l2);
     s2 = sqrt(abs(1-c2^2));
     

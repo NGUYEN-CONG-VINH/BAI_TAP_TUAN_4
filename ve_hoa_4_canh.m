@@ -1,11 +1,11 @@
 % NGUYEN CONG VINH 20146183
 syms t t1 t2 l1 l2 X Y
 l1 = 50
-l2 = 50
+l2 = 40
 
 for t = 0: 0.01 : 2*pi
-    X  = sin(2*t)*cos(t);
-    Y  = sin(2*t)*sin(t);
+    X  = 10+sin(2*t)*cos(t);
+    Y  = 10+sin(2*t)*sin(t);
     c2 = (X^2 + Y^2 -l1^2 -l2^2)/ (2*l1*l2) 
     s2 = sqrt(abs(1-c2^2));
     t2 = atan2(s2,c2);

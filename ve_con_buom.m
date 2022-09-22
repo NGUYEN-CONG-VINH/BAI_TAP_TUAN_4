@@ -1,11 +1,11 @@
 % NGUYEN CONG VINH 20146183
 syms t t1 t2 l1 l2 X Y
 l1 = 50
-l2 = 50
+l2 = 40
 
-for t = 0: 0.05 : 12*pi
-    X  = sin(t)*((exp(cos(t)))-2*cos(4*t)-(sin(t/12))^5);
-    Y  = cos(t)*((exp(cos(t)))-2*cos(4*t)-(sin(t/12))^5);
+for t = 0: 0.02 : 2*pi
+    X  = 10+sin(t)*((exp(cos(t)))-2*cos(4*t)-(sin(t/12))^5);
+    Y  = 10+cos(t)*((exp(cos(t)))-2*cos(4*t)-(sin(t/12))^5);
     c2 = (X^2 + Y^2 -l1^2 -l2^2)/ (2*l1*l2); 
     s2 = sqrt(abs(1-c2^2));
     t2 = atan2(s2,c2);
