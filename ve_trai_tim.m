@@ -1,12 +1,12 @@
 % NGUYEN CONG VINH 20146183
 syms t t1 t2 l1 l2 X Y
 l1 = 50
-l2 = 50
+l2 = 40
 
 for t = -pi: 0.02 : pi
     
-    X  = 10+16*(sin(t))^3; 
-    Y  = 10+13*cos(t)- 5*cos(2*t)- 2*cos(3*t)- cos(4*t);
+    X  = 20+16*(sin(t))^3; 
+    Y  = 20+13*cos(t)- 5*cos(2*t)- 2*cos(3*t)- cos(4*t);
     c2 = (X^2 + Y^2 -l1^2 -l2^2)/ (2*l1*l2);
     s2 = sqrt(abs(1-c2^2));
     
